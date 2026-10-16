@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/* Paleta do sistema Dorper (antes era repetida em style={{...}} nas páginas) */
+@theme {
+  --color-dorper-black: #121212;
+  --color-dorper-cream: #f7f7f5;
+  --color-dorper-green: #228b22;
+  --color-dorper-red: #dc2626;
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@layer base {
+  body {
+    background: var(--color-dorper-cream);
+    color: var(--color-dorper-black);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  label,
+  button {
+    font-weight: 500;
+  }
+}
